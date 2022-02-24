@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: font-titulo;
+    src: url(../fontes/fonte\ titulo.ttf);
+}
+
+/*variáveis*/
+:root {
+    --cor-topo: black;
+    --cor-h1-botao: red;
+    --cor-texto-h2: white;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imagens/fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+/* CABEÇALHO */
+
+.topo {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.topo .logo {
+    width: 100px;
+}
+
+.topo ul {
+    display: flex;
+    list-style: none;
+}
+
+.topo ul li a {
+    text-decoration: none;
+    color: var(--cor-texto-h2);
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-family: 'Zen Dots', cursive;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid white;
+}
+
+.topo ul li a:hover {
+    background-color: var(--cor-h1-botao);
+    box-shadow: 0px 0px 5px white;
+    color: var(--cor-texto-h2);
+    transition: 0.3s ease-in-out;
+    border-radius: 30px;
+}
+
+/* SESSÃO PRINCIPAL */
+
+main {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.sessao-1 {
+    font-family: 'Syne Mono', monospace;
+    max-width: 660px;
+}
+
+.sessao-1 h1 {
+    color: var(--cor-h1-botao);
+    font-size: 65px;
+    word-spacing: -0.19rem;
+    font-family: font-titulo;
+    text-shadow: 0px 0px 5px black;
+}
+
+.sessao-1 p{
+    color: var(--cor-texto-h2);
+    margin-top: 5px;
+    font-size: 1rem;
+    text-align:justify;
+}
+
+/* SESSÃO 2 */
+.sessao-2 {
+    margin-top: 20px;
+    max-width: 600px;
+    color: var(--cor-texto-h2);
+    font-family: 'Syne Mono', monospace;
+    background-color:rgb(53, 51, 51, 0.5);
+    padding: 10px 0px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.sessao-2 h2 {
+    text-align: center;
+    font-family: 'Zen Dots', cursive;
+    font-size: 25px;
+    letter-spacing: -1px;
+    word-spacing: -5px;
+    color:rgb(255, 0, 0);
+    text-shadow: 0px 0px 5px black;
+}
+
+.sessao-2 .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sessao-2 .formulario input {
+    padding: 10px 0px 10px 10px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    width: 400px;
+    margin-bottom: 15px;
+}
+.sessao-2 .formulario .label-1 {
+    margin-left: 16px;
+}
+
+.sessao-2 .formulario input:focus {
+    box-shadow: 0px 0px 10px rgb(8, 129, 209);
+}
+.sessao-2 .formulario button {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    background-image: linear-gradient(red,rgb(124, 7, 7));
+    color: var(--cor-texto-h2);
+    font-family: 'Zen Dots', cursive;
+}
+.sessao-2 .formulario button::after {
+    content: " > ";
+}
+.sessao-2 .formulario button:hover {
+    background-image: linear-gradient(rgb(124, 7, 7),red);
+    box-shadow: 0px 0px 1px black;
+}
+
+/* SESSÃO 3 */
+
+.imagem {
+    margin-left: 10rem;
+}
+
+.imagem img {
+    width: 200px;
+}
+
